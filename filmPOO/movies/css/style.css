@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ff7777;
+}
+
+.message-success {
+    text-align: center;
+    color: green;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.message-danger {
+    text-align: center;
+    color: red;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff7777;
+    padding: 15px;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+
+header {
+    width: 100%;
+}
+
+
+main {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 50px;
+}
+
+.menu {
+    background-color: #ff7777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;
+    max-width: 800px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.menu:hover {
+    background-color: #c75e5e;
+}
+
+.active {
+    background-color: #ff7777
+}
+
+.menu:after {
+    content: '+';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "-";
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+}
+
+.texte {
+    width: 50%;
+    max-width: 800px;
+    display: block;
+    margin: auto;
+    border-radius: 0 0 10px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.texte p {
+    margin: 10px 18px 20px 18px;
+    color: #ff7777;
+}
+
+ul {
+    margin: 10px 18px 50px 18px;
+    color: #ff7777;
+}
+
+h4 {
+    margin: 10px 18px 0px 18px;
+    color: #ff7777;
+    padding-bottom: 20px;
+    line-height: 22px;
+}
+
+/**/
+
+nav {
+    background-color: #ff7777;
+    padding: 30px 5px;
+}
+nav a {
+    background-color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 5px;
+    color: #ff7777;
+}
+
+.table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #ff7777;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #ff7777;
+    color: white;
+    border-radius: 10%;
+    margin: auto;
+    display: block;
+}
+
+button:hover {
+    background-color: #b85252;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.validate {
+    background: green;
+    color: white;
+    padding: 15px;
+}
+
+.delete:hover {
+    background-color: #8a0a0a;
+}
+
+.validate:hover {
+    background: #1e5d1e;
+}
+
+input[type=text] {
+    width: 90%;
+    margin: 10px auto;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=file] {
+    margin: 10px auto;
+    display: block;
+}
+
+select {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.formulaire button {
+    margin: auto;
+    display: block;
+}
+
+.alert-error {
+    text-align: center;
+    color: red;
+}
+
+.alert-success {
+    text-align: center;
+    color: green;
+}
+
+
+.formulaire {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.formulaire p {
+    text-align: center;
+    font-size: 20px;
+}
+/**/
+
+@media screen and (max-width: 600px) {
+    .menu, .texte {
+        width: initial;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header nav a {
+        padding: 32px 5px;
+    }
+}
